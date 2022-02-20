@@ -1,6 +1,6 @@
 /*import google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 /*reset browser values*/
 * {
     margin: 0;
@@ -17,17 +17,17 @@
     height: 500px;
     cursor: default;
 }
-#logo_text {
+#header_logo_text {
     position: absolute;
     margin-left: 25px;
     line-height: 75px;
-    font-family: 'Fraunces', sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 900;
     font-size: 25px;
     color: #fff;
 }
 #header_subcontainer_title {
-    font-family: 'Fraunces', sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 45px;
@@ -36,7 +36,7 @@
 }
 #arrow_down_content {
     animation: arrow_down_icon_animation 1s ease-in infinite alternate;
-    width: fit-content;
+    text-align: center;
 }
 @keyframes arrow_down_icon_animation {
     to {
@@ -60,7 +60,7 @@
     text-decoration: none;
     color: #fff;
     cursor: pointer;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 .navbar_item_link:hover {
     transition: 0.1s;
@@ -78,6 +78,11 @@
     box-shadow: 3px 3px 0 #bfbfbf;
 }
 /*main style*/
+.image_blocks {
+    width: 50vw;
+    height: 37vw;
+    object-fit: cover;
+}
 .blocks_container {
     display: flex;
     align-items: center;
@@ -87,53 +92,74 @@
     align-items: center;
     flex-direction: column;
     width: 50vw;
-    height: 500px;
-}
-.main_block:nth-child(3n) {
-    background: yellow;
+    height: 37vw;
+    justify-content: center;
 }
 .text_blocks_title {
-    font-family: 'Fraunces', sans-serif;
-    font-size: 37px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 3.2vw;
     width: 400px;
-    margin-top: 125px;
     margin-bottom: 25px;
 }
 .text_blocks_paragraph {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     color: #808080;
-    font-size: 17px;
+    font-size: 1.4vw;
     width: 400px;
     margin-bottom: 25px;
 }
 .text_blocks_learnmore {
-    font-family: 'Fraunces', sans-serif;
-    text-decoration: none;
+    font-family: "Fraunces", sans-serif;
+    text-decoration: 5px solid underline;
     color: #000;
-    font-size: 23px;
-    border-bottom: 5px solid gray;
+    font-size: 1.8vw;
+    width: 400px;
 }
-#egg_image {
-    background: url(../img/desktop/image-transform.jpg);
+#graphicdesign_title {
+    color: #205b4f;
 }
-#standout_image {
-    background: url(../img/desktop/image-stand-out.jpg);
+#photography_title {
+    color: #165b80;
 }
-#graphicdesign_image {
+#graphicdesign_paragraph {
+    color: #5b998c;
+}
+#photography_paragraph {
+    color: #368ab3;
+}
+#graphicdesign_title, #photography_title {
+    margin-top: 22vw;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.8vw;
+}
+#graphicdesign_paragraph, #photography_paragraph {
+    width: 40vw;
+    font-size: 1.4vw;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 25px;
+}
+#graphicdesign_container, #photography_container {
+    width: 50vw;
+    height: 37vw;
+}
+#graphicdesign_container {
     background: url(../img/desktop/image-graphic-design.jpg);
-}
-#photography_image {
-    background: url(../img/desktop/image-photography.jpg);
-}
-.final_main_blocks_title {
-    margin-top: 325px;
-    color: #194d44;
-}
-.final_main_block {
+    background-position: center;
+    display: flex;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#photography_container {
+    background: url(../img/desktop/image-photography.jpg);
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 #clients_title {
-    font-family: 'Fraunces', sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-size: 17px;
     color: #808080;
     margin: 100px 0 100px 0;
@@ -143,29 +169,34 @@
 #clients_content {
     display: grid;
     grid-template-columns: 325px 325px 325px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
 }
 .clients_images {
     border-radius: 50%;
-    position: relative;
-    left: 90px;
+}
+#emily_container, #thomas_container, #jennie_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .client_paragraph {
     margin-top: 75px;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     color: #202632;
+    font-size: 1.4vw;
+    width: 200px;
 }
 .client_name {
-    font-family: 'Fraunces', sans-serif;
-    font-size: 25px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 2vw;
     margin-top: 50px;
 }
 .client_charge {
     color: #808080;
     font-size: 13px;
-    font-family: 'Barlow', sans-serif;
-    margin-top: 17px;
+    font-family: "Barlow", sans-serif;
+    margin-top: 1.2vw;
 }
 #final_images_container {
     margin-top: 100px;
@@ -201,7 +232,7 @@ footer h1 {
 .footer_navbar_item_link {
     text-decoration: none;
     color: #194d44;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     transition: 0.1s;
     cursor: pointer;
 }
