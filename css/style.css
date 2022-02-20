@@ -273,16 +273,16 @@ footer h1 {
         height: 80vw;
     }
     .text_blocks_title {
-        font-size: 5vw;
+        font-size: 7vw;
         width: max-content;
     }
     .text_blocks_paragraph {
-        font-size: 4vw;
+        font-size: 6vw;
         width: 80vw;
         text-align: center;
     }
     .text_blocks_learnmore {
-        font-size: 4vw;
+        font-size: 6vw;
         width: max-content;
     }
     #graphicdesign_container,
@@ -292,12 +292,12 @@ footer h1 {
     }
     #graphicdesign_title,
     #photography_title {
-        font-size: 5vw;
+        font-size: 7vw;
         margin-top: 45vw;
     }
     #graphicdesign_paragraph,
     #photography_paragraph {
-        font-size: 4vw;
+        font-size: 6vw;
         width: 80vw;
         margin-top: 25px;
     }
@@ -316,18 +316,18 @@ footer h1 {
         align-items: center;
     }
     .client_paragraph {
-        font-size: 4vw;
+        font-size: 6vw;
         width: 80vw;
         margin-top: 25px;
     }
     .client_name {
         margin-top: 25px;
-        font-size: 4vw;
+        font-size: 6vw;
         width: 80vw;
     }
     .client_charge {
         width: 80vw;
-        font-size: 3vw;
+        font-size: 5vw;
     }
     #final_images_container {
         margin-top: 0;
