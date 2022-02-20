@@ -2,12 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 /*reset browser values*/
+body,
+html {
+    overflow-x: hidden !important;
+}
+@media (max-width: 786px) {
+    body,
+    html {
+        overflow-x: hidden !important;
+    }
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font: inherit;
     font-size: 100%;
+}
+img {
+    display: block;
+    max-width: 100%;
 }
 /*header style*/
 #header_container {
@@ -17,7 +31,7 @@
     height: 500px;
     cursor: default;
 }
-#header_logo_text {
+.logo_text {
     position: absolute;
     margin-left: 25px;
     line-height: 75px;
@@ -127,24 +141,27 @@
 #photography_paragraph {
     color: #368ab3;
 }
-#graphicdesign_title, #photography_title {
-    margin-top: 22vw;
-    font-family: 'Fraunces', sans-serif;
+#graphicdesign_title,
+#photography_title {
+    margin-top: 23vw;
+    font-family: "Fraunces", sans-serif;
     font-size: 2.8vw;
 }
-#graphicdesign_paragraph, #photography_paragraph {
+#graphicdesign_paragraph,
+#photography_paragraph {
     width: 40vw;
     font-size: 1.4vw;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     margin-top: 25px;
 }
-#graphicdesign_container, #photography_container {
+#graphicdesign_container,
+#photography_container {
     width: 50vw;
     height: 37vw;
 }
 #graphicdesign_container {
     background: url(../img/desktop/image-graphic-design.jpg);
-    background-position: center;
+    background-size: cover;
     display: flex;
     text-align: center;
     align-items: center;
@@ -152,7 +169,7 @@
 }
 #photography_container {
     background: url(../img/desktop/image-photography.jpg);
-    background-position: center;
+    background-size: cover;
     display: flex;
     text-align: center;
     align-items: center;
@@ -167,15 +184,15 @@
     letter-spacing: 5px;
 }
 #clients_content {
-    display: grid;
-    grid-template-columns: 325px 325px 325px;
-    justify-content: space-evenly;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 .clients_images {
     border-radius: 50%;
 }
-#emily_container, #thomas_container, #jennie_container {
+#emily_container,
+#thomas_container,
+#jennie_container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -185,7 +202,7 @@
     font-family: "Barlow", sans-serif;
     color: #202632;
     font-size: 1.4vw;
-    width: 200px;
+    width: 250px;
 }
 .client_name {
     font-family: "Fraunces", sans-serif;
@@ -201,10 +218,11 @@
 #final_images_container {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    background: whitesmoke;
 }
 .final_image {
-    width: 24.7vw;
+    width: 24.6025vw;
 }
 /*footer style*/
 footer {
@@ -241,4 +259,79 @@ footer h1 {
 }
 #social_container svg {
     margin: 75px 25px 50px 0;
+}
+@media (max-width: 850px) {
+    .blocks_container {
+        display: block;
+    }
+    .image_blocks {
+        width: 100vw;
+        height: 80vw;
+    }
+    .main_block {
+        width: 100vw;
+        height: 50vw;
+    }
+    .text_blocks_title {
+        font-size: 4vw;
+        width: max-content;
+    }
+    .text_blocks_paragraph {
+        font-size: 3vw;
+        width: 80vw;
+        text-align: center;
+    }
+    .text_blocks_learnmore {
+        font-size: 3vw;
+        width: max-content;
+    }
+    #graphicdesign_container,
+    #photography_container {
+        width: 100vw;
+        height: 80vw;
+    }
+    #graphicdesign_title,
+    #photography_title {
+        font-size: 4vw;
+        margin-top: 50vw;
+    }
+    #graphicdesign_paragraph,
+    #photography_paragraph {
+        font-size: 3vw;
+        width: 80vw;
+        margin-top: 25px;
+    }
+    #emily_container,
+    #thomas_container,
+    #jennie_container {
+        margin-bottom: 100px;
+        display: block;
+    }
+    #clients_title {
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+    #clients_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .client_paragraph {
+        font-size: 3vw;
+        width: 80vw;
+        margin-top: 25px;
+    }
+    .client_name {
+        margin-top: 25px;
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .client_charge {
+        width: 80vw;
+        font-size: 2vw;
+    }
+    #final_images_container {
+        margin-top: 0;
+    }
 }
