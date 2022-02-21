@@ -2,22 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 /*reset browser values*/
-body,
-html {
-    overflow-x: hidden !important;
-}
-@media (max-width: 786px) {
-    body,
-    html {
-        overflow-x: hidden !important;
-    }
-}
 * {
+    -webkit-tap-highlight-color: transparent;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font: inherit;
     font-size: 100%;
+}
+html {
+    overflow-x: hidden;
 }
 img {
     display: block;
@@ -51,6 +45,9 @@ img {
 #arrow_down_content {
     animation: arrow_down_icon_animation 1s ease-in infinite alternate;
     text-align: center;
+}
+#header_navbar_icon_menu {
+    display: none;
 }
 @keyframes arrow_down_icon_animation {
     to {
@@ -219,12 +216,8 @@ img {
 }
 #final_images_container {
     margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    background: whitesmoke;
-}
-.final_image {
-    width: 24.6025vw;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 /*footer style*/
 footer {
@@ -262,6 +255,12 @@ footer h1 {
 #social_container svg {
     margin: 75px 25px 50px 0;
 }
+#social_container svg:hover {
+    filter: grayscale(100%);
+}
+.navbar_menu_visible {
+    display: block;
+}
 @media (max-width: 850px) {
     .blocks_container {
         display: block;
@@ -295,7 +294,7 @@ footer h1 {
     #graphicdesign_title,
     #photography_title {
         font-size: 6vw;
-        margin-top: 50vw;
+        margin-top: 57vw;
     }
     #graphicdesign_paragraph,
     #photography_paragraph {
@@ -333,5 +332,44 @@ footer h1 {
     }
     #final_images_container {
         margin-top: 0;
+        grid-template-columns: 50vw 50vw;
+    }
+}
+@media (max-width: 585px) {
+    #header_subcontainer_title {
+        margin: 100px 20vw 0 20vw;
+    }
+    #header_navbar_icon_menu {
+        display: block;
+        text-align: right;
+        margin-right: 25px;
+        position: relative;
+        top: 25px;
+    }
+    #header_navbar {
+        display: flex;
+        justify-content: center;
+    }
+    #navbar_container {
+        background: #fff;
+        top: 75px;
+        width: 90vw;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        border-radius: 25px;
+        display: none;
+    }
+    .navbar_item {
+        margin: 0;
+        text-align: center;
+        display: block;
+    }
+    .navbar_item_link {
+        color: #202632;
+    }
+    .navbar_item:last-child a {
+        background: #fdd100;
+        color: #808080;
     }
 }
