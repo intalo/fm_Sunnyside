@@ -336,9 +336,6 @@ footer h1 {
     }
 }
 @media (max-width: 585px) {
-    #header_subcontainer_title {
-        margin: 100px 20vw 0 20vw;
-    }
     #header_navbar_icon_menu {
         display: block;
         text-align: right;
