@@ -162,6 +162,7 @@ img {
 #graphicdesign_container {
     background: url(../img/desktop/image-graphic-design.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     text-align: center;
     align-items: center;
@@ -170,6 +171,7 @@ img {
 #photography_container {
     background: url(../img/desktop/image-photography.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     text-align: center;
     align-items: center;
@@ -293,7 +295,7 @@ footer h1 {
     #graphicdesign_title,
     #photography_title {
         font-size: 6vw;
-        margin-top: 45vw;
+        margin-top: 48vw;
     }
     #graphicdesign_paragraph,
     #photography_paragraph {
