@@ -338,7 +338,7 @@ footer h1 {
 @media (max-width: 585px) {
     #header_subcontainer_title {
         text-align: center;
-        margin-top: 25px;
+        margin-top: 50px;
     }
     #header_navbar_icon_menu {
         display: block;
